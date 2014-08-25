@@ -2,7 +2,7 @@
   <% if @movie.errors.any? %>
     <ul>
       <% for message in @movie.errors.full_messages %>
-      <li><%= message %></li>
+      <li class="error"><%= message %></li>
       <% end %>
     </ul>
     <% end %>

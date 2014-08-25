@@ -1,12 +1,13 @@
-<h1>Cageflix</h1>
-
-<h2>Netflix for Nic Cage movies</h2>
-
 <%= link_to "Add Movie", new_movie_path %>
 
+<div class="movies">
+
 <% @movies.each do |movie| %>
-  <ul>
-    <h3><%= movie.name %> (<%= movie.year %>)</h3>
-    <p><%= movie.synopsis %></p>
-  </ul>
+  <dt>
+    <dl><h3><%= movie.name %> (<%= movie.year %>)</h3></dl>
+    <dl><p><%= movie.synopsis %></p></dl>
+  </dt>
+  <br>
 <% end %>
+
+</div>

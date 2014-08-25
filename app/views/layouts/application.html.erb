@@ -2,15 +2,25 @@
 <html>
 <head>
   <title>G3AssessmentWeek12</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="/application.css">
 </head>
 <body>
 
-<%= yield %>
+<section class="container">
+
+  <header>
+    <h1>Cageflix</h1>
+    <h2>Netflix for Nic Cage movies</h2>
+  </header>
+
+  <%= yield %>
+
+</section>
 
 </body>
 </html>

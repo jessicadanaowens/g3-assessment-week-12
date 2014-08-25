@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+
+
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.error {
+    color: red;
+}
+
+.container {
+    margin: 30px;
+}
+
+ul {
+    padding: 0;
+}
+
+
+dl {
+    margin: 0;
+}
+
+li {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+
+.movies {
+    padding-top: 40px;
+}
