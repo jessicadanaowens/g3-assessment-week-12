@@ -4,3 +4,10 @@
 
 <%= link_to "Add Movie", new_movie_path %>
 
+<%= @movies.each do |movie| %>
+<ul>
+<li><%= movie.name %></li>
+<li><%= movie.year %></li>
+<li><%= movie.synopsis %></li>
+</ul>
+<% end %>

@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
 
   def index
-
+    @movies = Movie.all
   end
 
   def new
@@ -9,7 +9,6 @@ class MoviesController < ApplicationController
   end
 
   def create
-
     @movie = Movie.new(
       :name => params[:movie][:name],
       :year => params[:movie][:year],

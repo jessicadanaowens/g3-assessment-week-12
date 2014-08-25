@@ -3,4 +3,8 @@ class Movie < ActiveRecord::Base
   validates :year, :presence => true
   validates :synopsis, :presence => true
 
+  validates_numericality_of   :year,
+  :only_integer => true
+
+
 end
