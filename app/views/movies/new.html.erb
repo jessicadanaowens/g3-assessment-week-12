@@ -7,15 +7,16 @@
     </ul>
     <% end %>
 
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <dt>
+  <dl><%= f.label :name %></dl>
+  <dl><%= f.text_field :name %></dl>
 
-  <%= f.label :year %>
-  <%= f.text_field :year %>
+  <dl><%= f.label :year %></dl>
+  <dl><%= f.text_field :year %></dl>
 
-  <%= f.label :synopsis %>
-  <%= f.text_field :synopsis %>
+  <dl><%= f.label :synopsis %></dl>
+  <dl><%= f.text_field :synopsis %></dl>
 
-  <%= f.submit "Add Movie" %>
-
+  <dl><%= f.submit "Add Movie" %></dl>
+  </dt>
 <% end %>
