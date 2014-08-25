@@ -9,6 +9,17 @@ class MoviesController < ApplicationController
   end
 
   def create
-    redirect_to root_path
+
+    @movie = Movie.new(
+      :name => params[:movie][:name],
+      :year => params[:movie][:year],
+      :synopsis => params[:movie][:synopsis]
+    )
+
+    if @movie.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 end
